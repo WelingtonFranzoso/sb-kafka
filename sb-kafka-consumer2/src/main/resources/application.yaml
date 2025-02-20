@@ -1,0 +1,7 @@
+server:
+  port: 7070
+
+topics:
+  chat:
+    request:
+      topic: "chat.request.topic.v1"
