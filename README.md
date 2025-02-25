@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-Este em projeto que consiste em dois microserviços Java utilizando Spring Boot e Apache Kafka. O sistema consiste em um Producer que envia mensagens com informações de uma classe ChatMessage para dois Consumers em GroupId diferentes, consumer1 também faz uso de threads para cosumir partições difentes de um mesmo tópico.
+Este projeto envolve dois microserviços desenvolvidos em Java com Spring Boot e Apache Kafka. O sistema é composto por um produtor (Producer) que envia mensagens contendo informações de uma classe ChatMessage para um tópico no Apache Kafka. Essas mensagens são então consumidas por dois consumidores (Consumers) que pertencem a grupos diferentes (com GroupId distintos). O consumidor consumer1 faz uso de múltiplas threads para consumir as mensagens de diferentes partições dentro do mesmo tópico, garantindo maior paralelismo e eficiência no processamento.
 
 # Funcionalidades
 - Envio de mensagens para o Kafka através de um Producer.
